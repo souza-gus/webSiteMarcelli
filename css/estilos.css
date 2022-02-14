@@ -168,6 +168,10 @@ svg{
         padding-bottom: 20px;
     }
 
+    .galeria h1 {
+        font-size: 100%;
+    }
+
     .fotos {
         flex-direction: row;
         flex-wrap: wrap;
@@ -183,25 +187,4 @@ svg{
         height: 300px;
     }
 
-}
-
-@media screen and (max-width: 505px) {
-    .galeria h1 {
-        font-size: 13px;
-    }
-
-
-    #foto1, #foto2, #foto3, #foto4 {
-        margin: 0;
-        width: 48%;
-        height: 300px;
-    }
-}
-
-@media screen and (min-width: 600px) and (max-width: 1024px) {
-    #foto1, #foto2, #foto3, #foto4 {
-        margin: 0;
-        width: 48%;
-        height: 500px;
-    }
 }
