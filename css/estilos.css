@@ -163,7 +163,7 @@ svg{
     }
 
     .galeria {
-        width: 95%;
+        width: 98%;
         height: auto;
         padding-bottom: 20px;
     }
@@ -183,7 +183,7 @@ svg{
 
     #foto1, #foto2, #foto3, #foto4 {
         margin: 0;
-        width: 45%;
+        width: 48%;
         height: 300px;
     }
 
