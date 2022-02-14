@@ -114,7 +114,7 @@ svg{
     filter: drop-shadow(0 0 0.40rem rgb(31, 31, 31));
 }
 
-@media (max-width: 858px){
+@media screen and (max-width: 1024px) {
     nav {
         width: 100%;
         height: auto;
@@ -168,10 +168,6 @@ svg{
         padding-bottom: 20px;
     }
 
-    .galeria h1 {
-        font-size: 15px;
-    }
-
     .fotos {
         flex-direction: row;
         flex-wrap: wrap;
@@ -187,4 +183,25 @@ svg{
         height: 300px;
     }
 
+}
+
+@media screen and (max-width: 505px) {
+    .galeria h1 {
+        font-size: 13px;
+    }
+
+
+    #foto1, #foto2, #foto3, #foto4 {
+        margin: 0;
+        width: 48%;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    #foto1, #foto2, #foto3, #foto4 {
+        margin: 0;
+        width: 48%;
+        height: 500px;
+    }
 }
