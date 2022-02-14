@@ -85,7 +85,7 @@ svg{
 .galeria h1 {
     line-height: 45px;
     margin-top: 2vh;
-    letter-spacing: 14px;
+    letter-spacing: 12px;
 }
 
 .fotos {
@@ -168,6 +168,10 @@ svg{
         padding-bottom: 20px;
     }
 
+    .galeria h1 {
+        letter-spacing: 5px;
+    }
+
     .fotos {
         flex-direction: row;
         flex-wrap: wrap;
@@ -207,7 +211,7 @@ svg{
 
 @media screen and (min-width: 100px) and (max-width: 510px) {
     .galeria h1 {
-        font-size: 12px;
+        font-size: 20px;
     }
 
     #foto1, #foto2, #foto3, #foto4 {
