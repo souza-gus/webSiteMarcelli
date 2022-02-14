@@ -168,10 +168,6 @@ svg{
         padding-bottom: 20px;
     }
 
-    .galeria h1 {
-        font-size: 100%;
-    }
-
     .fotos {
         flex-direction: row;
         flex-wrap: wrap;
@@ -181,10 +177,42 @@ svg{
         margin-top: 2%;
     }
 
+    
+
+}
+
+@media screen and (min-width: 840px) and (max-width: 1024px) {
+    .galeria h1 {
+        font-size: 32px;
+    }
+
+    #foto1, #foto2, #foto3, #foto4 {
+        margin: 0;
+        width: 48%;
+        height: 740px;
+    }
+}
+
+@media screen and (min-width: 510px) and (max-width: 840px) {
+    .galeria h1 {
+        font-size: 28px;
+    }
+
+    #foto1, #foto2, #foto3, #foto4 {
+        margin: 0;
+        width: 48%;
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 510px) {
+    .galeria h1 {
+        font-size: 12px;
+    }
+
     #foto1, #foto2, #foto3, #foto4 {
         margin: 0;
         width: 48%;
         height: 300px;
     }
-
 }
