@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: rgb(59, 59, 59);
+    letter-spacing: 3px;
+}
+
+h1 {
+    font-family: 'Hahmlet', serif;
+    cursor: default;
+}
+
+.container {
+    background-color: white;
+}
+
+.navClass {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 10vh;
+    margin-top: 2vh;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    align-items: center;
+    font-size: 20px;
+}
+
+nav ul li {
+    padding: 0 4px 0 4px;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    text-decoration: underline 1px;
+    text-underline-offset: 5px;
+}
+
+#inicio {
+    text-decoration: underline 1px;
+    text-underline-offset: 5px;
+}
+
+nav ul li a::after {
+    text-decoration: underline 10px;
+}
+
+.checkbtn {
+    margin-right: 15px;
+    display: none;
+    height: 10vh;
+}
+
+svg{
+    display: flex;
+    height: 10vh;
+    align-self: center;
+}
+
+#check {
+    display: none;
+}
+
+.galeria {
+    margin: 0 auto;
+    width: 90%;
+    height: 86vh;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.galeria h1 {
+    line-height: 45px;
+    margin-top: 2vh;
+    letter-spacing: 14px;
+}
+
+.fotos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1%;
+    width: 100%;
+    height: calc(86vh - 45px);
+}
+
+#foto1, #foto3 {
+    width: 22%;
+    height: 79%;
+    margin-top: -5%;
+    border-radius: 3px;
+    filter: drop-shadow(0 0 0.40rem rgb(31, 31, 31));
+}
+
+#foto2, #foto4 {
+    width: 22%;
+    height: 79%;
+    margin-top: 6%;
+    border-radius: 3px;
+    filter: drop-shadow(0 0 0.40rem rgb(31, 31, 31));
+}
+
+@media (max-width: 858px){
+    nav {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        
+    }
+    .checkbtn {
+        display: block;
+        margin-left: auto;
+    }
+    nav ul {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 88vh;
+        left: 100%;
+        background-color: rebeccapurple;
+    }
+    nav ul li {
+        display: flex;
+        width: 100%;
+        height: 15%;
+        padding: 0;
+    }
+
+    nav ul li a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-bottom: solid 1px;
+    }
+
+    nav ul li a:hover { 
+        text-decoration: none;
+    }
+
+    #inicio {
+        text-decoration: none;
+    }
+
+    #check:checked ~ ul {
+        position: relative;
+        left: 0;
+    }
+
+    .galeria {
+        height: auto;
+    }
+
+    .fotos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        height: auto;
+        gap: 20px 2%;
+        margin-top: 2%;
+    }
+
+    #foto1, #foto2, #foto3, #foto4 {
+        margin: 0;
+        width: 40%;
+        height: 90%;
+    }
+
+}
