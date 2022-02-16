@@ -11,6 +11,9 @@
 h1 {
     font-family: 'Hahmlet', serif;
     cursor: default;
+    line-height: 45px;
+    margin-top: 2vh;
+    letter-spacing: 12px;
 }
 
 .container {
@@ -84,12 +87,6 @@ main {
     height: 86vh;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-h1 {
-    line-height: 45px;
-    margin-top: 2vh;
-    letter-spacing: 12px;
 }
 
 .fotos {
@@ -169,6 +166,102 @@ h1 {
     height: calc(calc(49vh - 10px) - 45px);
 }
 
+.servicoscontato {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 90%;
+    height: calc(49vh - 10px);
+    margin-top: 20px;
+    gap: 0 1%;
+}
+
+.corposervicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 40%;
+    height: calc(49vh - 10px);
+}
+
+.corposervicos p {
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.corpocontato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 60%;
+    height: calc(49vh - 10px);
+}
+
+#servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.fotosservicos {
+    width: 13%;
+}
+
+#servico2, #servico3 {
+    margin-top: 2%;
+}
+
+#contatos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 0 1%;
+}
+
+#contatos img {
+    width: 75%;
+    height: 75%;
+}
+
+#contato1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#contato1 h2 {
+    margin-bottom: -9%;
+}
+
+#contato1 a {
+    font-size: 15px;
+    margin-top: -9%;
+}
+
+#contato2 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#contato2 p {
+    font-size: 23px;
+}
+
+#contato2 h2 {
+    margin-top: 30%;
+}
+
 @media screen and (max-width: 1024px) {
     nav {
         width: 100%;
@@ -241,16 +334,6 @@ h1 {
         padding-bottom: 20px;
     }
     
-    .servicos {
-        width: 98%;
-        height: auto;
-    }
-    
-    .contato {
-        width: 98%;
-        height: auto;
-    }
-
     .fototexto {
         height: auto;
         flex-direction: column;
@@ -269,6 +352,23 @@ h1 {
         height: 50%;
     }
 
+    .servicoscontato {
+        flex-direction: column;
+        width: 98%;
+        height: auto;
+        padding-bottom: 20px;
+        gap: 20px 0;
+    }
+
+    .corposervicos {
+        width: 100%;
+        height: auto;
+    }
+
+    .corpocontato {
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media screen and (min-width: 840px) and (max-width: 1024px) {
