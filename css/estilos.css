@@ -124,24 +124,6 @@ main {
     margin-top: 20px;
 }
 
-.servicos {
-    margin: 0 auto;
-    width: 90%;
-    height: calc(49vh - 10px);
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin-top: 20px;
-}
-
-.contato {
-    margin: 0 auto;
-    width: 90%;
-    height: calc(49vh - 10px);
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin-top: 20px;
-}
-
 .fototexto {
     display: flex;
     flex-direction: row;
