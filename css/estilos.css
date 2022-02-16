@@ -342,6 +342,10 @@ main {
         gap: 20px 0;
     }
 
+    #servicos {
+        padding-bottom: 20px;
+    }
+
     .corposervicos {
         width: 100%;
         height: auto;
@@ -351,6 +355,29 @@ main {
         width: 100%;
         height: auto;
     }
+
+    #contatos {
+        flex-direction: column;
+    }
+
+    #contato1 h2 {
+        margin-top: 3%;
+        margin-bottom: 10px;
+    }
+    
+    #contato1 a {
+        margin-top: 1px;
+    }
+
+    #contato2 {
+        padding-bottom: 20px;
+        padding-left: 4%;
+    }
+    
+    #contato2 h2 {
+        margin-top: 4%;
+    }
+    
 }
 
 @media screen and (min-width: 840px) and (max-width: 1024px) {
